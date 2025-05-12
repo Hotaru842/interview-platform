@@ -25,14 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ConvexClerkProvider>
-      <html lang="en">
+    <html lang="en">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-          {children}
+          >
+            <ConvexClerkProvider>
+              {children}
+            </ConvexClerkProvider>
         </body>
       </html>
-    </ConvexClerkProvider>
   );
 }

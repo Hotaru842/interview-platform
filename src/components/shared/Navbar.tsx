@@ -3,6 +3,8 @@ import { ModeToggle } from '@/components/ui/ModeToggle';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from "../../images/logo.svg";
+import { SignedIn, UserButton } from '@clerk/nextjs';
+import DashboardButton from './DashboardButton';
 
 const Navbar = () => {
   return (
@@ -19,6 +21,13 @@ const Navbar = () => {
             <span className="text-md font-normal text-gray-700 dark:text-white">sync</span>
           </div>
         </Link>
+        <SignedIn>
+          <div className="flex items-center space-x-4 ml-auto">
+            <DashboardButton />
+            <ModeToggle />
+            <UserButton />
+          </div>
+        </SignedIn>
       </div>
     </nav>
   )

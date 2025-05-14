@@ -4,7 +4,9 @@ import { SignInButton } from "@clerk/nextjs";
 export default function Home() {
   return (
     <div className="m-10">
-     home page
+     home page <SignInButton>
+      <Button>Login</Button>
+     </SignInButton>
     </div>
   );
 }

@@ -10,12 +10,12 @@ import { Card } from "@/components/ui/card";
 function ActionCard({ action, onClick }: { action: QuickActionType; onClick: () => void }) {
   return (
     <Card
-      className="group relative overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-lg cursor-pointer"
+      className="group relative overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-sm cursor-pointer"
       onClick={onClick}
     >
       {/* ACTION GRADIENT */}
       <div
-        className={`absolute inset-0 bg-gradient-to-br ${action.gradient} opacity-100 group-hover:opacity-50 transition-opacity`}
+        className={`absolute inset-0 bg-gradient-to-br opacity-100 group-hover:opacity-50 transition-opacity`}
       />
 
       {/* ACTION CONTENT WRAPPER */}

@@ -48,7 +48,7 @@ function MeetingModal({ isOpen, onClose, title, isJoinMeeting }: MeetingModalPro
             <Button variant="outline" onClick={onClose}>
               Cancel
             </Button>
-            <Button onClick={handleStart} disabled={isJoinMeeting && !meetingUrl.trim()}>
+            <Button className="bg-[#4004fc] text-white" onClick={handleStart} disabled={isJoinMeeting && !meetingUrl.trim()}>
               {isJoinMeeting ? "Join Meeting" : "Start Meeting"}
             </Button>
           </div>

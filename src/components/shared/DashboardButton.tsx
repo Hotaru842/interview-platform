@@ -12,7 +12,7 @@ function DasboardButton() {
 
   return (
     <Link href={"/dashboard"}>
-      <Button className="gap-2 font-medium bg-[#4004fc] text-white" size={"sm"}>
+      <Button className="gap-2 font-medium bg-[#4004fc] text-white hover:bg-[#4004fc]" size={"sm"}>
         <SparklesIcon className="size" />
         Dashboard
       </Button>

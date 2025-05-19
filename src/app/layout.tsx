@@ -5,6 +5,7 @@ import ThemeProvider from "@/components/providers/ThemeProvider";
 import Navbar from "@/components/shared/Navbar";
 import { RedirectToSignIn, SignedOut, SignedIn } from "@clerk/nextjs";
 import { Toaster } from "react-hot-toast";
+import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "./globals.css";
 
 const geistSans = localFont({

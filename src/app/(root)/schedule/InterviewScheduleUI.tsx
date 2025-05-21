@@ -144,7 +144,7 @@ function InterviewScheduleUI() {
 
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <Button size="lg">Schedule Interview</Button>
+            <Button variant="outline" size="lg">Schedule Interview</Button>
           </DialogTrigger>
 
           <DialogContent className="sm:max-w-[500px] h-[calc(100vh-200px)] overflow-auto">

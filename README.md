@@ -15,6 +15,8 @@ Highlights:
 - 🎨 Styling with Tailwind & Shadcn
 - ✨ Server Actions
 
+[Live Link](https://easy-termite-82.accounts.dev/sign-in)
+
 ### Setup .env file
 
 ```js

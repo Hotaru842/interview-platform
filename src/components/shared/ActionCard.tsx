@@ -23,9 +23,9 @@ function ActionCard({ action, onClick }: { action: QuickActionType; onClick: () 
         <div className="space-y-3">
           {/* ACTION ICON */}
           <div
-            className={`w-12 h-12 rounded-full flex items-center justify-center bg-${action.color}/10 group-hover:scale-110 transition-transform`}
+            className={`w-12 h-12 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform`}
           >
-            <action.icon className={`h-6 w-6 text-${action.color}`} />
+            <action.icon className={`h-6 w-6 text-gray-400`} />
           </div>
 
           {/* ACTION DETAILS */}
